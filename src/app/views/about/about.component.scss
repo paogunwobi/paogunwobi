@@ -1,0 +1,80 @@
+.heading-section h2 {
+    font-size: 50px;
+    color: black;
+    font-weight: 700;
+}
+
+.my-about .img-about {
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.my-about .img-about .img {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.change {
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 32px;
+    background-color: green;
+    color: white;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 400;
+}
+
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.my-about ul.about-info {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.my-about ul.about-info li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.my-about ul.about-info li span {
+    width: calc(100% - 130px);
+}
+
+.my-about ul.about-info li span:first-child {
+    font-weight: 600;
+    color: #000000;
+    width: 130px;
+}
+
+.my-about .counter-wrap .text p {
+    font-size: 20px;
+}
+
+.my-about .counter-wrap .text p span {
+    font-weight: 400;
+    color: #000000;
+}
+
+.my-about .counter-wrap .text p span.number {
+    font-weight: 600;
+    color: #3e64ff;
+}

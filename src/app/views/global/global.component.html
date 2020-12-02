@@ -1,0 +1,133 @@
+<section class="">
+    <!--Navbar-->
+    <mdb-navbar class="my_navbar my-navbar-light navbar-expand-lg site-navbar-target fixed-top" SideClass="navbar navbar-expand-lg navbar-1 lighten-2 navbar-light" [containerInside]="false">
+
+        <div class="container">
+            <!-- Navbar brand -->
+            <mdb-navbar-brand class="container">
+                <span class=""><img width="40" alt="Philip Logo" src="assets/philip_logo.png"></span>
+                <button class="navbar-toggler" style="color:black!important;float:right!important;" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+                  <span class="">
+                    <i class="fas fa-bars fa-1x"></i>
+                  </span>
+                </button>
+            </mdb-navbar-brand>
+
+            <!-- Collapsible content -->
+            <span [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+                <links>
+                    <!-- Links -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#home-section" hrefActive="" class="nav-link"><span>Home</span></a>
+            </li>
+            <li class="nav-item" (click)="true">
+                <a href="#about-section" hrefActive="active" class="nav-link"><span>About</span></a>
+            </li>
+            <li class="nav-item" (click)="true">
+                <a href="#resume-section" hrefActive="active" class="nav-link"><span>Resume</span></a>
+            </li>
+            <li class="nav-item" (click)="true">
+                <a href="#services-section" hrefkActive="active" class="nav-link"><span>Services</span></a>
+            </li>
+            <!-- <li class="nav-item" (click)="isMenuCollapsed = !isMenuCollapsed">
+                        <a href="#products-section" hrefActive="active" class="nav-link"><span>Products</span></a>
+                    </li> -->
+            <li class="nav-item" (click)="true">
+                <a href="#contact-section" hrefActive="active" class="nav-link"><span>Contact</span></a>
+            </li>
+            </ul>
+            <!-- Links -->
+            </links>
+            <!-- Collapsible content -->
+            </span>
+        </div>
+    </mdb-navbar>
+    <!--/.Navbar-->
+
+    <div>
+        <app-home></app-home>
+        <app-about></app-about>
+        <app-resume></app-resume>
+        <app-services></app-services>
+        <app-info></app-info>
+        <app-contact></app-contact>
+        <!-- <app-products>
+            </app-products> -->
+
+    </div>
+
+    <footer class="my-footer my-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="text-right text-lg-right text-sm-center text-xs-center col-md">
+                    <div class="my-footer-widget mb-4 ml-md-4">
+                        <h2 class="my-heading-2">About Me</h2>
+                        <div class="text-light">
+                            <p>UI/UX Design Expert and a Software Developer</p>
+                            <span class="text">6 Paul Odulaja Crescent, Ifako Bus-Stop Ifako-Gbagada Lagos,
+                            Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center col-md">
+                    <div class="my-footer-widget mb-4 ml-md-4">
+                        <h2 class="my-heading-2">Links</h2>
+                        <ul class="list-unstyled text-center">
+                            <li>
+                                <a href="#home-section">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about-section">About</a>
+                            </li>
+                            <li>
+                                <a href="#resume-section">Resume</a>
+                            </li>
+                            <li>
+                                <a href="#services-section">Services</a>
+                            </li>
+                            <!-- <li>
+                              <a href="#products-section">Products</a>
+                          </li> -->
+                            <li>
+                                <a href="#contact-section">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="my-footer-widget mb-4">
+                        <h2 class="my-heading-2">Follow Me</h2>
+                        <div class="block-23 mb-3">
+                            <div>
+                                <div class="">
+                                    <a href="https://twitter.com/princephilay" target="_blank"><i class="fab fa-twitter mr-4"></i></a>
+                                    <a class="my-animate" href="https://www.linkedin.com/in/philip-ayodeji-ogunwobi-995a7086/" target="_blank"><i class="fab fa-linkedin mr-4"></i></a>
+                                    <a class="my-animate" href="https://github.com/paogunwobi" target="_blank"><i class="fab fa-github mr-4"></i></a>
+                                    <a class="my-animate" href="https://wa.link/dyyvxt" target="_blank"><i class="fab fa-whatsapp mr-4"></i></a>
+                                </div>
+                                <br />
+                                <span class="mr-0">
+                                  <span class="">
+                                      <a href="mailto:info@paogunwobi.com"><i class="fas fa-envelope mr-4"></i><span class="text">info@paogunwobi.com</span></a>
+                                </span><br><br>
+                                <span class="">
+                                  <a href="tel://+2348138384155"><span class="icon icon-phone"><i class="fas fa-phone-alt mr-4"></i></span><span class="text">+2348138384155</span></a>
+                                </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Copyright &copy;<span class="mr-2">{{ dateYear }}</span> paogunwobi.com | All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>

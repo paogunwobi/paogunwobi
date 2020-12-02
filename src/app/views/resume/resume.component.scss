@@ -1,0 +1,284 @@
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky!important;
+    top: 80px;
+    left: 0;
+    z-index: 1020;
+}
+
+.sideHg {
+    min-height: 0rem;
+}
+
+.minHgt {
+    min-height: 100vh;
+}
+
+.page {
+    width: 100%;
+    margin-bottom: 7em;
+}
+
+.page .heading {
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: green;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.border-primary {
+    border-color: #007bff !important;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.my-no-pb {
+    padding-bottom: 0 !important;
+}
+
+.my-section {
+    padding: 4em 0;
+    position: relative;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.my-animated {
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    line-height: 1.5;
+    color: black;
+    font-size: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+h5 {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h3 {
+    display: block;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} //SKILLS--------------------
+.progress-wrap {
+    width: 100%;
+    margin-bottom: 30px;
+    h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+}
+
+//PROGRESS BAR
+.progress {
+    height: 10px;
+    box-shadow: none;
+    background: lighten(black, 90%);
+    overflow: visible;
+}
+
+.progress-bar {
+    background: green;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 1.2;
+    color: black;
+    font-weight: 600;
+    position: relative;
+    overflow: visible;
+    border-radius: 2px;
+    &:after {
+        position: absolute;
+        top: -2px;
+        right: 0;
+        width: 34px;
+        height: 34px;
+        content: '';
+        background: green;
+        border-radius: 2px;
+        opacity: 0;
+    }
+    span {
+        position: absolute;
+        top: -38px;
+        right: 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+    }
+}
+
+.progress-circle {
+    .progress {
+        width: 150px;
+        height: 150px;
+        background: none;
+        position: relative;
+    }
+    .progress::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 6px solid #eee;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .progress>span {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+    .progress .progress-left {
+        left: 0;
+    }
+    .progress .progress-bar {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-width: 6px;
+        border-style: solid;
+        position: absolute;
+        top: 0;
+    }
+    .progress .progress-left .progress-bar {
+        left: 100%;
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 80px;
+        border-left: 0;
+        -webkit-transform-origin: center left;
+        transform-origin: center left;
+    }
+    .progress .progress-right {
+        right: 0;
+    }
+    .progress .progress-right .progress-bar {
+        left: -100%;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+        border-right: 0;
+        -webkit-transform-origin: center right;
+        transform-origin: center right;
+    }
+    .progress .progress-value {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.resume-wrap {
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding-bottom: 10px;
+    .icon {
+        width: 50px;
+        height: 50px;
+        background: green;
+        border-radius: 50%;
+        span {
+            color: white;
+            font-size: 28px;
+        }
+    }
+    .text {
+        width: calc(100% - 50px);
+    }
+    .date {
+        font-weight: 700;
+        font-size: 16px;
+        color: rgba(0, 0, 0, .6);
+        color: green;
+    }
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .position {
+        font-size: 18px;
+        font-weight: 700;
+        color: black;
+    }
+}
