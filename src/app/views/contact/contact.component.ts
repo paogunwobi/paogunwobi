@@ -71,7 +71,7 @@ export class ContactComponent implements OnInit {
   sendMail(): void {
     this.nonEmpty();
     this.validateEmail();
-    this.validateNumber();
+    // this.validateNumber();
     this.validateName();
 
     this.contact = {
