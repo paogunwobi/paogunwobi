@@ -4,8 +4,8 @@
     "scripts": {
         "ng": "ng",
         "backend": "node backend/server.js",
-        "start": "ng serve",
-        "dev": "concurrently --kill-others \"npm run backend\" \"npm run start\"",
+        "dev": "ng serve",
+        "start": "concurrently --kill-others \"npm run backend\" \"npm run dev\"",
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
